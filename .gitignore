@@ -1,3 +1,6 @@
+<<<<<<< HEAD
+node_modules/
+=======
 *.csv
 *.dat
 *.efx
@@ -225,3 +228,4 @@ override.tf.json
 terraform.rc
 
 # End of https://mrkandreev.name/snippets/gitignore-generator/#Data,Linux,Python,Windows,Terraform
+>>>>>>> refs/heads/main
