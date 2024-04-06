@@ -63,3 +63,6 @@ For the GitHub public host key, see [GitHub's SSH key fingerprints](https://docs
 For the GitLab public host key, see [SSH known_hosts entries](https://docs.gitlab.com/ee/user/gitlab_com/#ssh-known_hosts-entries).
 
 8. Click Link.
+
+ℹ Dataform needs a secret containing a personal access token (for HTTPS remotes) or a user private key (for SSH remotes) for connecting to your git provider. To proceed, create a secret in Secret Manager and grant roles/secretmanager.secretAccessor permissions to the default Dataform service account (service-[PROJECT_ID]@gcp-sa-dataform.iam.gserviceaccount.com).
+
