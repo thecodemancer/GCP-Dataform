@@ -1,5 +1,7 @@
 # GCP-Dataform
 
+<img src="images/dataform.png" alt="thecodemancer_" />
+
 ## Configurating your local development
 
 mkdir scripts
