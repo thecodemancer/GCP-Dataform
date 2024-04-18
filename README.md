@@ -37,6 +37,7 @@ The Dataform service account requires a number of IAM roles with which to be abl
 - BigQuery Data Editor role.
 - BigQuery Data Viewer role.
 - Storage Object Viewer role.
+- Secret Manager Secret Accessor
 
 ## 4. Create a GitHub token
 
@@ -70,6 +71,8 @@ To start developing with Dataform, first initialize your project with the requir
 
 ## 9. Connect a Dataform repository
 
+ℹ Dataform needs a secret containing a personal access token (for HTTPS remotes) or a user private key (for SSH remotes) for connecting to your git provider.
+
 To link a Dataform repository to a remote Git repository, follow these steps:
 
 1. In the Google Cloud console, go to the Dataform page.
@@ -102,10 +105,7 @@ For the GitHub public host key, see [GitHub's SSH key fingerprints](https://docs
 
 For the GitLab public host key, see [SSH known_hosts entries](https://docs.gitlab.com/ee/user/gitlab_com/#ssh-known_hosts-entries).
 
-8. Click Link.
-
+8. Click Link. If you followed the steps correctly, your Repository settings should look like the following:
+   
 <img src="images/dataform_settings.png" alt="Dataform | Google Cloud Platform | GCP | BigQuery | thecodemancer_" />
-
-
-ℹ Dataform needs a secret containing a personal access token (for HTTPS remotes) or a user private key (for SSH remotes) for connecting to your git provider. To proceed, create a secret in Secret Manager and grant roles/secretmanager.secretAccessor permissions to the default Dataform service account (service-[PROJECT_ID]@gcp-sa-dataform.iam.gserviceaccount.com).
 
